@@ -1,0 +1,253 @@
+.quest-tasks-page {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 65px 0 65px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.quest-tasks-page-left-section {
+    position: relative; /* Устанавливаем контейнер как контекст позиционирования */
+    overflow: hidden; /* Обрезаем содержимое, выходящее за границы контейнера */
+    max-width: 30%; /* Устанавливаем максимальную ширину контейнера */
+    max-height: 100%; /* Устанавливаем максимальную высоту контейнера */
+    box-sizing: border-box; /* Включаем padding и border в размер элемента */
+    display: flex;
+    border: 2px solid #fff;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+.quest-tasks-page-left-section-all {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%; 
+}
+
+
+.quest-tasks-page-left-section-description-text,
+.quest-tasks-page-left-section-description-chain-level {
+    padding-bottom: 20px;
+}
+
+.quest-tasks-page-left-section-description-pic {
+    padding-bottom: 25px;
+}
+
+
+.leftSectionLogoCompanyTasks {
+    max-width: 22%; /* Ограничиваем максимальный размер изображений */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.quest-tasks-page-left-section-description-text-title-h2,
+.quest-tasks-page-left-section-description-text-descript-p,
+.text-chain,
+.text-level {
+    word-wrap: break-word; /* Переносим длинные слова на новую строку */
+    margin: 0;
+    display: flex;
+}
+
+.quest-tasks-page-left-section-description-text-title-h2 {
+    padding-bottom: 10px;
+    font-family: 'Pixel Operator HB 8', sans-serif;
+}
+
+.quest-tasks-page-left-section-description-text-descript-p {
+    font-family: 'Pixel Operator HB', sans-serif;
+    color: #656668;
+}
+
+.quest-tasks-page-left-section-description-chain-level {
+    display: flex; /* Выравниваем элементы в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    gap: 10px; /* Промежуток между элементами */
+    justify-content: flex-start; /* Прижимаем элементы к левому краю */
+}
+
+.quest-tasks-page-left-section-description-chain-link, 
+.quest-tasks-page-left-section-description-level-pic-text {
+    display: inline-flex; /* Оставляем ширину по содержимому */
+    align-items: center; /* Выравниваем иконку и текст по вертикали */
+    background-color: #161616; /* Задаем фон для каждого элемента */
+    padding: 10px 10px; /* Внутренние отступы для создания пространства */
+    white-space: nowrap; /* Запрещаем перенос строк внутри элементов */
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 20px;
+}
+
+
+.quest-tasks-page-left-section-description-chain-link img, 
+.quest-tasks-page-left-section-description-level-pic-text img {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+    max-width: 20px; /* Ограничиваем максимальный размер изображений */
+    height: auto; /* Сохраняем пропорции изображения */
+    display: flex;
+}
+
+.quest-tasks-page-left-section-buttons {
+    display: flex;
+}
+
+.quest-tasks-page-left-section-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.quest-tasks-page-left-section-buttons-container-button {
+    display: flex;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    align-items: center;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.quest-tasks-page-left-section-buttons-container-button-number {
+    border: 2px solid #fff;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 20pt;
+    padding: 5px 0;
+}
+
+.quest-tasks-page-left-section-buttons-container-button-text {
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 26px;
+}
+
+.quest-tasks-page-left-section-buttons-container-button-number p,
+.quest-tasks-page-left-section-buttons-container-button-text p {
+    margin: 0;
+}
+
+.quest-tasks-page-right-section {
+    position: sticky; /* Устанавливаем контейнер как контекст позиционирования */
+    top: 110px;
+    overflow: hidden; /* Обрезаем содержимое, выходящее за границы контейнера */
+    max-width: 69%; /* Устанавливаем максимальную ширину контейнера */
+    max-height: 100%; /* Устанавливаем максимальную высоту контейнера */
+    box-sizing: border-box; /* Включаем padding и border в размер элемента */
+    display: flex;
+    border: 2px solid #fff;
+    padding: 2%;
+    flex: 1;
+    height: calc(100dvh - 130px);
+}
+
+.quest-tasks-page-right-section-task {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quest-tasks-page-right-section-task-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 10%;
+}
+
+.quest-tasks-page-right-section-task-pic img {
+    width: 20%;
+    height: auto;
+}
+
+.quest-tasks-page-right-section-task-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Чтобы текст тоже был центрирован */
+    height: auto;
+    padding: 0 90px;
+    margin-top: 1%;
+    gap: 10px;
+}
+
+.quest-tasks-page-right-section-task-text-title h2,
+.quest-tasks-page-right-section-task-text-descript p {
+    margin: 0;
+}
+
+.quest-tasks-page-right-section-task-text-title h2 {
+    font-family: 'Pixel Operator HB 8', sans-serif;
+    font-size: 32px;
+}
+
+.quest-tasks-page-right-section-task-text-descript p {
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 24px;
+    color: #656668;
+    word-wrap: break-word;
+}
+
+.quest-tasks-page-right-section-task-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 2%;
+    width: auto;
+}
+
+.quest-tasks-page-right-section-task-button-link {
+    border: 2px solid #fff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    display: inline-flex;
+    white-space: nowrap;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.quest-tasks-page-right-section-task-button-link img {
+    width: 25px;
+    height: auto;
+    margin-left: 5%;
+}
+
+.quest-tasks-page-right-section-task-button-link p {
+    margin: 0;
+    display: inline-block;
+}
+
+.quest-tasks-page-right-section-task-button-verify {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    margin-top: 8%;
+    
+}
+
+.quest-tasks-page-right-section-task-button-verify p {
+    margin: 0;
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 30px;
+    color: #00FF38;
+}
+
+.quest-tasks-page-right-section-task-button-verify button {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 30px;
+    background-color: black;
+    border: 2px solid #fff;
+}

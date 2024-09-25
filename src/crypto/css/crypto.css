@@ -1,0 +1,259 @@
+.main-preblock {
+    height: 150px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 90%;
+    display: flex;
+}
+
+.main-left-side {
+    margin-right: auto;
+}
+
+.main-text {
+    font-size: 22pt;
+    font-weight: bold;
+    margin-block: 0;
+}
+
+.main-subtext {
+    font-size: 14pt;
+    font-weight: normal;
+    color: #939393;
+    margin-block: 0;
+    margin-top: 5px;
+}
+
+.main-right-side {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.MV-block {
+    background-color: #000000;
+    border: solid 2px #FFFFFF;
+    width: 250px;
+    height: 80px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.MV-label-percentage {
+    display: flex;
+}
+
+.MV-label {
+    font-size: 14pt;
+    font-weight: lighter;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+    margin-right: 12px;
+}
+
+.MV-percentage-background {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MV-percentage-background.green {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.MV-percentage-background.red {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.MV-percentage-arrow {
+    width: 10px;
+    margin-right: 6px;
+}
+
+.MV-percentage-text {
+    font-size: 12pt;
+    font-weight: normal;
+    color: #b0b0b0;
+    display: flex;
+}
+
+.MV-percentage-text.green {
+    color: #00FF00;
+}
+
+.MV-percentage-text.red {
+    color: #FF0000;
+}
+
+.MV-value {
+    font-size: 16pt;
+}
+
+.coins-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.coins-block {
+    background-color: #000000;
+    border: solid 2px #FFFFFF;
+    width: 90%;
+    overflow: scroll clip;
+}
+
+.coins-list-tile {
+    color: white;
+    height: 50px;
+    display: flex;
+    padding-left: 22px;
+    padding-right: 10px;
+    align-items: center;
+    font-size: 13pt;
+    text-decoration: none;
+}
+
+.coins-list-tile:hover {
+    background-color: #252525;
+    cursor: pointer;
+}
+
+.coins-list-tile.alt {
+    opacity: 50%;
+    font-size: 12pt;
+    margin-bottom: 15px;
+}
+
+.coins-list-tile.alt:hover {
+    background-color: #121212;
+    cursor: default;
+}
+
+.coins-list-coin-rank {
+    width: 2%;
+    min-width: 20px;
+    height: 10px;
+    display: flex;
+    margin: 10px 20px 10px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coins-list-coin-base-info-container {
+    width: 25%;
+    min-width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.coins-list-coin-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 16px;
+}
+
+.coins-list-coin-name {
+    margin-right: 8px;
+}
+
+.coins-list-coin-symbol {
+    font-size: 10pt;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.coins-list-coin-percentage-container {
+    width: 25%;
+    min-width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.coins-list-coin-percentage-block {
+    min-width: 70px;
+    height: 30px;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.coins-list-coin-percentage-block.green {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.coins-list-coin-percentage-block.red {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.coins-list-info-percentage-arrow {
+    width: 8px;
+    margin-right: 6px;
+}
+
+.coins-list-coin-percentage-text {
+    font-size: 10pt;
+    font-weight: normal;
+    color: #b0b0b0;
+    display: flex;
+}
+
+.coins-list-coin-percentage-text.green {
+    color: #00FF00;
+}
+
+.coins-list-coin-percentage-text.red {
+    color: #FF0000;
+}
+
+.coins-list-coin-PMV-container {
+    width: 20%;
+    min-width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.coins-list-coin-PMV-value {
+    width: 20%;
+    min-width: 100px;
+    justify-content: right;
+    display: flex;
+    margin: 7%;
+}
+
+.coins-list-coin-charts-container {
+    width: 23%;
+    min-width: 150px;
+    height: 50px;
+    margin-left: 5%;
+    display: flex;
+    justify-self: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.coins-list-coin-charts {
+    max-width: 200px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}

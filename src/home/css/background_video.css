@@ -1,0 +1,24 @@
+.video-container {
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+
+.video-wrapper {
+    height: inherit;
+    width: 100%;
+}
+
+.video-wrapper video {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.video-overlay {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}

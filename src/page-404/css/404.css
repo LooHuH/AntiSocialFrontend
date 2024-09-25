@@ -1,0 +1,53 @@
+.page-404-main-container {
+    width: 100%;
+    height: calc(100vh - var(--header-total-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page-404-main-container h1,
+.page-404-main-text-container h2,
+.page-404-main-text-container h3,
+.page-404-main-text-container h4 {
+    line-height: 1;
+}
+
+.page-404-main-container h1 {
+    opacity: 5%;
+    font-family: "Pixel Operator Mono HB 8", sans-serif;
+    font-size: 256pt;
+}
+
+.page-404-main-text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    gap: 20px;
+    transform: translateY(55%);
+}
+
+.page-404-main-text-container h2 {
+    font-family: "Pixel Operator HB SC", sans-serif;
+    font-size: 92pt;
+}
+
+.page-404-main-text-container h3 {
+    color: var(--75-white);
+    font-size: 36pt;
+}
+
+.page-404-main-text-container h3,
+.page-404-main-text-container h4 {
+    font-family: "Pixel Operator Mono", sans-serif;
+}
+
+.page-404-main-text-container h4 {
+    color: var(--50-white);
+    font-size: 24pt;
+}

@@ -1,0 +1,117 @@
+.footer-container {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-left, .footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text {
+    text-align: left;
+    margin-left: 30px;
+    max-width: 75%;
+}
+
+.footer-description, .footer-disclaimer {
+    font-size: 18pt;
+    font-family: "Pixel Operator", sans-serif;
+    color: #777777;
+}
+
+.footer-description span {
+    color: var(--white);
+    font-size: 20pt;
+    font-family: "Pixel Operator HB", sans-serif;
+}
+
+.footer-disclaimer-header {
+    margin-top: 20px;
+    font-size: 20pt;
+    font-family: "Pixel Operator HB", sans-serif;
+}
+
+.footer-links {
+    gap: 30px;
+    display: flex;
+}
+
+.footer-products-links,
+.footer-contact-links,
+.footer-social-links {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Pixel Operator HB", sans-serif;
+    font-size: 18pt;
+    color: #777777 ;
+}
+
+.footer-products-link-crypto:hover,
+.footer-products-link-quests:hover,
+.footer-products-link-blog:hover,
+.footer-social-link-telegram:hover,
+.footer-social-link-discord:hover,
+.footer-social-link-twitter:hover,
+.footer-social-link-email:hover,
+.footer-social-link-support:hover {
+    color: #555555;
+}
+
+.footer-products-container p, .footer-social-container p, .footer-contact-container p {
+    font-size: 20pt;
+    font-family: "Pixel Operator HB", sans-serif;
+    margin: 0 0 15px;
+}
+
+.footer-products-container, .footer-social-container, .footer-contact-container {
+    width: 150px;
+}
+
+.footer-rights {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    align-self: flex-end;
+    margin-top: auto;
+    font-size: 8pt;
+    font-family: "Pixel Operator HB 8", sans-serif;
+}
+
+.footer-today-users-container p{
+    font-size: 20pt;
+    font-family: "Pixel Operator HB", sans-serif;
+    margin: 0 0 15px;
+    color: var(--white);
+}
+
+.footer-today-users-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Pixel Operator HB", sans-serif;
+    font-size: 18pt;
+    color: var(--white);
+    align-items: center;
+}
+
+.footer-user-link {
+    flex-direction: row;
+    color: var(--white);
+}
+
+.footer-user-link .today-users-text {
+    margin-top: -5px;
+    margin-left: -10px;
+}

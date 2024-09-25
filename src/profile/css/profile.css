@@ -1,0 +1,371 @@
+:root {
+    --profile-main-margin-vertical: 20px;
+    --profile-main-margin-horizontal: 80px;
+    --profile-blocks-gap: 20px;
+    --profile-top: calc(var(--header-total-height) + var(--profile-main-margin-vertical));
+    --profile-bottom: var(--profile-main-margin-vertical);
+    --profile-left: var(--profile-main-margin-horizontal);
+    --profile-right: var(--profile-main-margin-horizontal);
+
+    --profile-side-block-width: 300px;
+    --profile-side-block-height: calc(100% - var(--profile-top) - var(--profile-bottom));
+
+    --profile-center-block-width: calc(
+            100%
+            - (2 * (
+                var(--profile-main-margin-horizontal)
+                + var(--profile-side-block-width)
+                + var(--profile-blocks-gap)
+            ))
+    );
+
+    --profile-avatar-size: 100px;
+}
+
+
+.profile-center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-side-container {
+    width: var(--profile-side-block-width);
+    height: var(--profile-side-block-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: var(--profile-top);
+}
+
+.profile-side-container.left {
+    left: var(--profile-left);
+}
+
+.profile-side-container.right {
+    right: var(--profile-right);
+}
+
+.profile-block {
+    background-color: var(--black);
+    border: var(--border);
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.profile-block.season-pass {
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-block.quests {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 15px;
+}
+
+.profile-block.achievements {
+    font-family: "Pixel Operator", sans-serif;
+    overflow-y: scroll;
+}
+
+.profile-subtitle-container {
+    width: 100%;
+}
+
+.profile-subtitle {
+    font-family: "Pixel Operator HB", sans-serif;
+    justify-self: flex-start;
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-subtitle.big h1 {
+    font-size: 24pt;
+}
+
+.profile-subtitle.small h1 {
+    font-size: 14pt;
+}
+
+.profile-id-card-container,
+.profile-season-pass-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-id-card-container button {
+    min-width: 100%;
+    min-height: 40px;
+}
+
+.profile-id-card-user-info {
+    font-family: "Pixel Operator HB", sans-serif;
+    display: flex;
+    gap: 10px;
+}
+
+.profile-id-card-user-avatar {
+    border: var(--border);
+    width: var(--profile-avatar-size);
+    aspect-ratio: 1;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.profile-id-card-user-texts-counters {
+    flex: 1;
+    height: calc(var(--profile-avatar-size) + (2 * var(--border-size)));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-id-card-user-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.profile-id-card-user-texts h1 {
+    font-size: 18pt;
+}
+
+.profile-id-card-user-texts h2 {
+    color: var(--50-white);
+    font-size: 16pt;
+}
+
+.profile-id-card-user-counters {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.profile-id-card-user-counter {
+    background-color: var(--black);
+    border: var(--border);
+    color: var(--white);
+    font-family: "Pixel Operator", sans-serif;
+    font-size: 14pt;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-id-card-user-counter h1 {
+    font-size: 14pt;
+}
+
+.profile-id-card-user-counter div {
+    display: flex;
+    gap: 5px;
+}
+
+.profile-id-card-user-counter div img {
+    width: 13px;
+}
+
+.profile-id-card-user-counter div h2 {
+    font-size: 17pt;
+}
+
+.profile-id-card-user-level {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-id-card-user-level-number {
+    height: 50px;
+}
+
+.profile-id-card-user-level-progress-bar {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    left: 0;
+}
+
+.profile-id-card-user-level-experience {
+    color: var(--50-white);
+    font-family: "Pixel Operator HB", sans-serif;
+    font-size: 12pt;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+
+.profile-id-card-user-joined-date {
+    font-family: "Pixel Operator HB", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-id-card-user-joined-date h1 {
+    color: var(--50-white);
+    font-size: 18pt;
+}
+
+.profile-season-pass-info {
+    font-family: "Pixel Operator HB", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-season-pass-time-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-season-pass-time-left img {
+    width: 16px;
+    aspect-ratio: 26 / 34;
+    object-fit: contain;
+}
+
+.profile-season-pass-progress {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.profile-season-pass-progress-text {
+    font-family: "Pixel Operator", sans-serif;
+    font-size: 22pt;
+    text-align: center;
+    width: 25%;
+}
+
+.profile-season-pass-progress-text span {
+    font-family: "Pixel Operator HB", sans-serif;
+    font-size: 42pt;
+}
+
+.profile-season-pass-progress-bar {
+    width: 75%;
+    height: 40px;
+}
+
+.profile-season-pass-button {
+    padding: 5px 10px;
+}
+
+.profile-completed-quests-container {
+    width: var(--profile-center-block-width);
+    display: flex;
+    flex-direction: column;
+    margin: var(--profile-main-margin-vertical) 0;
+    gap: 10px;
+}
+
+.profile-achievements-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-achievements-block {
+    font-family: "Pixel Operator", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.profile-achievements-block-part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-achievement-container {
+    flex: 1;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.profile-achievement-container.locked {
+    filter: saturate(0) brightness(75%);
+}
+
+.profile-achievement-info {
+    justify-self: flex-start;
+    display: flex;
+    gap: 10px;
+}
+
+.profile-achievement-info img {
+    width: 28px;
+    object-fit: contain;
+}
+
+.profile-achievement-header-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.profile-achievement-header-desc h1 {
+    font-size: 16pt;
+}
+
+.profile-achievement-header-desc h2 {
+    color: var(--7E-white);
+    font-size: 12pt;
+}
+
+.profile-achievement-container h3 {
+    justify-self: flex-end;
+    color: var(--50-white);
+    font-size: 14pt;
+    text-align: center;
+}

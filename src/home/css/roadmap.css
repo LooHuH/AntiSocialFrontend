@@ -1,0 +1,110 @@
+.roadmap-container {
+    height: calc(100vh - 95px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color: #080808;
+}
+
+.roadmap-card {
+    width: 16%;
+    height: 100%;
+    border-width: 1px;
+    border-color: white;
+    position:relative;
+}
+
+.blured {
+    filter: blur(2px)
+}
+
+.roadmap-content {
+    height: 55%;
+    width: 100%;
+    border-top: 0;
+    border-style: solid;
+}
+
+.ellipse {
+    position: absolute;
+    height: 15%;
+    width: 45%;
+    top: 48%;
+    left: 28%;
+}
+
+.ellipse-text {
+    fill: black;
+    font-size: 100px;
+    font-family: 'Hacked', sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.roadmap-text-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 44%;
+    left: 6%;
+    top: 1%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.roadmap-text-container h2 {
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    padding-top: 1%;
+    font-family: 'Pixel Operator', sans-serif;
+    font-size: 1.8vw;
+}
+
+.roadmap-text-container p {
+    height: 80%;
+    width: 90%;
+    margin-top: 3%;
+    font-family: 'Pixel Operator', sans-serif;
+    font-size: 12pt;
+}
+
+.reversed {
+    transform: rotate(180deg);
+}
+
+
+.striped-text {
+    font-size: 5em;
+    background: linear-gradient(90deg, transparent 50%, #fff 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.striped-text::before {
+    content: 'Bitty Text';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+                                transparent 25%, 
+                                #f00 25%, 
+                                #f00 50%, 
+                                transparent 50%, 
+                                transparent 75%, 
+                                #f00 75%);
+    background-size: 5px 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}

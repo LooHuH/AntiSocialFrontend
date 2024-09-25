@@ -1,0 +1,102 @@
+:root {
+    --quest-card-width: 280px;
+    --quest-card-height: 350px;
+}
+
+
+.quest-card-container * {
+    cursor: var(--pointer);
+}
+
+.quest-card-container {
+    border: var(--border);
+    width: var(--quest-card-width);
+    height: var(--quest-card-height);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.quest-card-image {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.quest-card-info-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quest-card-info-container h1 {
+    align-self: start;
+    font-family: "Pixel Operator HB", sans-serif;
+    font-size: 24pt;
+}
+
+.quest-card-info {
+    font-family: "Pixel Operator", sans-serif;
+    font-size: 12pt;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quest-card-info-tasks,
+.quest-card-info-xp {
+    background-color: var(--16-white);
+    padding: 5px 10px;
+}
+
+.quest-card-info-project,
+.quest-card-info-chain {
+    padding: 2.5px 0;
+}
+
+.quest-card-info-tasks-xp,
+.quest-card-info-project-chain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quest-card-info-tasks,
+.quest-card-info-project {
+    justify-self: flex-start;
+}
+
+.quest-card-info-xp,
+.quest-card-info-chain {
+    justify-self: flex-end;
+}
+
+.quest-card-info-project,
+.quest-card-info-chain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quest-card-info-project img,
+.quest-card-info-chain img {
+    width: 26px;
+    object-fit: contain;
+}
+
+.quest-card-info-project h3 {
+    font-size: 16pt;
+}
+
+.quest-card-info-separator {
+    background-color: var(--white);
+    width: 100%;
+    height: 2px;
+}

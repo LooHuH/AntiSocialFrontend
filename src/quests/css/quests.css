@@ -1,0 +1,418 @@
+.quests-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 25px 80px 25px 30px;
+  flex-wrap: wrap;
+}
+
+.search-bar-area {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1736px) {
+  .welcome-banner-text {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .chain-link-images img{
+    width: 25px;
+    height: 25px;
+    margin: 20px 10px;
+  }
+
+  .welcome-banner-slider {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .quests-slide-text-name-quest {
+    font-size: 30px;
+    padding-top: 0;
+  }
+
+  .quests-pic-name-company p {
+    font-size: 20px;
+  }
+
+  .quests-pic-name-company img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-banner-slider {
+    margin-top: 1rem;
+  }
+}
+
+.search-bar {
+  /* margin-top: 2rem; */
+  border: 2px solid #ffffff;
+  height: 55px;
+  display: flex;
+  max-width: 340px;
+}
+
+.search-bar input {
+  width: calc(100% - 55px);
+  background-color: black;
+  font-family: 'Pixel Operator', sans-serif;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.frame-search-bar {
+  width: 55px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar img {
+  width: 24px;
+  height: 24px;
+}
+
+.welcome-banner {
+  width: 100%;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.welcome-banner-text {
+  max-width: 100%;
+  font-family: "Pixel Operator HB 8", sans-serif;
+  font-size: 40px;
+  color: white;
+  height: auto;
+  flex: 1;
+  min-width: 250px;
+}
+
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span2,
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span3,
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span4,
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span5 {
+  line-height: 1.5;
+}
+
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span2 {
+  color: #008000;
+  padding: 0 20px;
+}
+
+.earn-points-and-rewards-by-contributing-to-your-favourite-web-3-community-span4 {
+  color: #800000;
+  padding: 0 20px;
+}
+
+.chain-link-images img {
+  width: 45px;
+  height: 45px;
+  margin: 30px 10px;
+  cursor: var(--pointer);
+}
+
+
+/*Quests cards and filters*/
+
+.main-part-of-quest-page {
+  /* margin-top: 40px; */
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.quest-filter-container {
+  position:sticky;
+  top: 120px;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  margin-top: 58px;
+  box-sizing: border-box;
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+}
+
+.sidebarFilters {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  border: 2px solid #fff;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sort-by,
+.status,
+.my-progress {
+  margin-bottom: 15px;
+}
+
+.chain {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-family: "Pixel Operator", sans-serif;
+}
+
+select {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #000000;
+  color: white;
+  border: 2px solid #ffffff;
+  font-size: 11px;
+  font-family: "Pixel Operator Mono HB 8", sans-serif;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.status-tile,
+.chain-tile {
+  padding: 10px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-align: left;
+  border: 2px solid #ffffff;
+  font-family: "Pixel Operator Mono HB 8", sans-serif;
+  font-size: 12px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.status-tile {
+  justify-content:flex-start;
+}
+
+.status-tile * {
+  cursor: var(--pointer);
+}
+
+.status-tile:hover {
+  background-color: #428649;
+}
+
+.chain-tile:hover {
+  background-color: #505050;
+}
+
+.status-tile.selected,
+.chain-tile.selected {
+  background-color: #06C519;
+}
+
+.chain-tile * {
+  cursor: var(--pointer);
+}
+
+.status-tile img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.chain-tile-chainname {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.chain-tile-chainname img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.chain-tile-select {
+  flex-direction: row;
+  display: flex;
+  align-items: left;
+  height: 20px;
+  width: 20px;
+  justify-content: center;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+
+.chain-tile-select p {
+  transform: rotate(90deg);
+  font-size: 16px;
+}
+
+.scroll-menu {
+  height: 210px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+.showAllQuestsButton {
+  display: flex;
+  margin-top: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  font-family: "Pixel Operator Mono HB", sans-serif;
+  font-size: 20px;
+}
+
+.showAllQuestsButton:hover {
+  background-color: #505050;
+}
+
+.MyProgressLabel {
+  padding: 10px 0;
+  font-size: 24px;
+  font-family: 'Pixel Operator HB', sans-serif;
+  width: 100%;
+  max-width: 335px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.sidebarProgressXP {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid #fff;
+  background-color: #000000;
+  width: 100%;
+  max-width: 300px;
+  text-decoration: none;
+}
+
+.sidebarProgressXP:hover {
+  filter: blur(1px);
+}
+
+.quest-pentagon-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.quest-pentagon-white {
+  position: absolute;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(50% 100%, 100% 62%, 82% 0%, 18% 0%, 0% 62%);
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1; 
+}
+
+.quest-pentagon-black {
+  position: absolute; 
+  background-color: rgb(0, 0, 0);
+  width: 45px;
+  height: 45px;
+  clip-path: polygon(50% 100%, 100% 62%, 82% 0%, 18% 0%, 0% 62%);
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2; 
+}
+
+.quest-grade-number {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.sidebarProgressXP-score-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebarProgressXP-score-points-text {
+  color: white;
+  height: auto;
+  text-align: center;
+}
+
+.sidebarProgressXP-score-points-text p {
+  margin: 0;
+}
+
+.sidebarProgressXP-score-points-text p:first-child {
+  font-size: 24px;
+  font-family: "Pixel Operator HB", sans-serif;
+}
+
+.sidebarProgressXP-score-points-text p:last-child {
+  font-size: 16px; 
+  color: gray;
+  padding-top: 5px;
+  font-family: "Pixel Operator", sans-serif;
+}
+
+.sidebarProgressXP-score-points-arrowNext {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+}
+
+.sidebarProgressXP-score-points-arrowNext img {
+  width: 25px;
+  height: 25px;
+}

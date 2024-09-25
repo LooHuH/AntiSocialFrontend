@@ -1,0 +1,29 @@
+.progress-bar-container {
+    background-color: var(--33-white);
+    font-family: "Pixel Operator 8", sans-serif;
+    font-size: 8pt;
+    width: 100%;
+    height: 100%;
+    min-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.progress-bar-container h1 {
+    color: var(--black);
+    transform: translateY(1px);
+    z-index: 1;
+}
+
+.progress-bar-container div {
+    background-color: var(--white);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

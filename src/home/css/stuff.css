@@ -1,0 +1,145 @@
+.stuff-container {
+    height: calc(100vh - 95px);
+    width: 100%;
+    background-color: #080808;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card-container { 
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.stuff-card {
+    height: 52%;
+    aspect-ratio: 0.85;
+    max-width: 90%;
+    text-align: center;
+    border: solid white 2px;
+    position: relative;
+    z-index: 1;
+    margin-top: 25%;
+    background-color: black;
+}
+
+.container-3d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 5px;
+    bottom: 5px;
+    background-color: #ffffff;
+}
+
+.front-card {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 85%;
+}
+
+.card-signature {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+}
+
+.card-signature p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    font-family: 'Pixel Operator HB SC', sans-serif;
+    font-size: 1.8vw;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-description {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #080808;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    z-index: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    opacity: 0;
+    cursor: var(--pointer);
+}
+
+.stuff-card:hover .card-description {
+    opacity: 100%;
+    cursor: var(--pointer);
+}
+
+.card-green-text {
+    color: #00FF38;
+    font-family: 'Pixel Operator HB', sans-serif;
+}
+
+.card-description p {
+    color: #ffffff;
+    font-family: 'Pixel Operator HB', sans-serif;
+    font-size: 1vw;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.card-id-container p  {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.card-crimes {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-crimes p {
+    text-align: center;
+    color: red;
+    margin-top: 4%;
+}
+
+.card-crimes ul li {
+    text-align: left;
+}
+
+.small-img {
+    position: absolute;
+    width: 27%;
+    height: auto;
+    right: 7%;
+    top: 10%;
+}
+
+.small-img img {
+    width: 100%;
+    height: 100%;
+}

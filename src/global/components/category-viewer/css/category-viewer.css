@@ -1,0 +1,33 @@
+.category-viewer-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category-viewer-category-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.category-viewer-category-button {
+    font-size: 20pt;
+    min-height: 40px;
+    padding: 0 5px;
+}
+
+.category-viewer-category-button.active {
+    padding: 0 7px;
+}
+
+.category-viewer-category-content-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    z-index: 1;
+}
+
+.category-viewer-category-content-page.hidden {
+    opacity: 0;
+    z-index: -1;
+}

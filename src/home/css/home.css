@@ -1,0 +1,46 @@
+.white-line {
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.9);;
+}
+
+.black-line {
+    background-color: black;
+}
+
+.page-switcher {
+    position: fixed;
+    display: flex;
+    width: auto;
+    height: 39px;
+    left: calc(50% - 20px);
+    bottom: 3%;
+    z-index: 1;
+    animation: moveUpDown 0.4s steps(2) infinite alternate;
+    cursor: var(--pointer);
+}
+
+@keyframes moveUpDown {
+    0% {
+        align-items: start;
+    }
+    100% {
+        align-items: end;
+    }
+}
+
+.page-switcher:hover {
+    filter: brightness(25%);
+}
+
+.page-switcher img {
+    width: 40px;
+    /* height: 24px; */
+    aspect-ratio: initial;
+    object-fit: contain;
+    cursor: var(--pointer);
+}
+
+.page-switcher.hidden {
+    opacity: 0;
+    pointer-events: none
+}

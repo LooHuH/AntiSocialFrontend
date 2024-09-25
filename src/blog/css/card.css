@@ -1,0 +1,74 @@
+:root {
+    --head-text-color: #008000;
+    --head-font: "Pixel Operator HB";
+    --second-font: "Pixel Operator 8";
+}
+
+.blog-card-container {
+    background: #000000;
+    border: 2px solid #ffffff;
+    height: 100px;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.date-container {
+    height: 100%;
+    width: 10%;
+}
+
+.blog-date {
+    color: var(--head-text-color);
+    font-family: var(--head-font), sans-serif;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.blog-line {
+    background: var(--head-text-color);
+    border-width: 5px 0 0 0;
+    margin-top: 15px;
+    width: 5px;
+    height: 70%;
+}
+
+.blog-date-month {
+    color: var(--head-text-color);
+    font-family: var(--head-font), sans-serif;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.blog-description-container {
+    margin-left: 10px;
+    height: 100%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 1fr 25%;
+}
+
+.blog-text-container {
+    display: grid;
+}
+
+.blog-header-text {
+    color: var(--head-text-color);
+    font-family: var(--head-font), sans-serif;
+    font-size: 20pt;
+}
+
+.blog-second-text{
+    color: white;
+    font-family: var(--second-font), sans-serif;
+    font-size: 10pt;
+
+}
+
+.blog-read-more {
+    text-align: right;
+    color: var(--head-text-color);
+    font-family: var(--head-font), sans-serif;
+    font-size: 18pt;
+}

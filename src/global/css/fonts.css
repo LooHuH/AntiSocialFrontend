@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "HACKED";
+    src: url('../assets/fonts/hacked/HACKED.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Consolas";
+    src: url('../assets/fonts/consolas/consolas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url('../assets/fonts/pixel-operator/PixelOperator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pixel Operator";
+    src: url('../assets/fonts/pixel-operator/PixelOperator-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator 8';
+    src: url('../assets/fonts/pixel-operator/PixelOperator8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pixel Operator 8";
+    src: url('../assets/fonts/pixel-operator/PixelOperator8-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator HB';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorHB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator HB 8';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorHB8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator HB SC';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorHBSC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono 8';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMono8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono 8';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMono8-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono HB';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMonoHB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Mono HB 8';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorMonoHB8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator SC';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorSC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator SC';
+    src: url('../assets/fonts/pixel-operator/PixelOperatorSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
